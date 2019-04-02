@@ -46,86 +46,8 @@
  */
 
 #include <iostream>
-#include <algorithm>
-#include <unordered_map>
-using namespace std;
-static auto x = [](){
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-    return 0;
-}();
-
-int lenthOfLongestSubstring(string s) {
-    int subStringStart = 0, maxLength = 0;
-    string subString;
-    size_t occPos;
-    
-    for (int subStringEnd = 0; subStringEnd < s.length(); subStringEnd++) {
-        // 查找subStringStart位置之后是否有插入的字符
-        occPos = subString.find(s[subStringEnd], subStringStart);
-        // 如果subString中已有带插入字符，将子串中已有字符的位置(occpos)
-        // 下一位置(occPos+1)设置为无重复子串的开始位置，即向右移动滑窗
-        // 不断调整无重复子字符串的开始位置
-        if (occPos != string::npos) {
-            subStringStart = (int)occPos + 1;
-        }
-        // 依次将S中的元素插入subString中，同时不断计算最长子字符串长度并更新
-        subString.push_back(s[subStringEnd]);
-        maxLength = max(maxLength, subStringEnd - subStringStart + 1);
-    }
-    
-    return maxLength;
-}
-
-int lengthOfLongestSubstring2(string s) {
-    if (s == "") {
-        return 0;
-    }
-    unordered_map<char, int> hmap;
-    int left = 0, right = 0, max = 0;
-    
-    for (int i = 0; i < s.size(); i++) {
-        
-        auto it = hmap.find(s[i]);
-        
-        // 判断是否包含字符s[i]的key 相等就是不包含
-        if (it != hmap.end()) {
-            
-            // s[i]存在hamp中
-            // 用right下标 - 之前存储的小标值=间距。然后判断这个间距是否比max值大
-            if (right - left > max) {
-                max = right - left;
-            }
-            
-            // 取出"存在"map中元素的value值
-            int itSecond = it -> second;
-            // itSecond + 1 跟left比较
-            if (itSecond + 1 > left) {
-            
-                left = itSecond + 1;
-            }
-            
-            // 确定left的z数值和map的数值，不在map，保持不变
-        }
-        // 记录i值
-        right = i;
-        
-        // s[i] 作为key  i作为value
-        hmap[s[i]] = i;
-        cout <<"left = " << left << "\t right = " << right << "\t max = " << max <<endl;
-    }
-    
-    if (right - left > max) {
-        max = right - left;
-    }
-    return max + 1;
-}
-
 int main(int argc, const char * argv[]) {
 
-    int length = lenthOfLongestSubstring("pwiwkew");
-    int length1 = lengthOfLongestSubstring2("pwiwkew");
-    cout << length << endl;
-    cout << length1 << endl;
+
     return 0;
 }

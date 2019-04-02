@@ -10,6 +10,7 @@
 		EA0EB8B2225340DD009FE75D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA0EB8B1225340DD009FE75D /* main.cpp */; };
 		EA0EB8BA2253414F009FE75D /* Solution01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA0EB8B82253414F009FE75D /* Solution01.cpp */; };
 		EA0EB8BD22534224009FE75D /* Solution02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA0EB8BB22534224009FE75D /* Solution02.cpp */; };
+		EA0EB8C022537B48009FE75D /* Solution03.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA0EB8BE22537B48009FE75D /* Solution03.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		EA0EB8B92253414F009FE75D /* Solution01.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Solution01.hpp; sourceTree = "<group>"; };
 		EA0EB8BB22534224009FE75D /* Solution02.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Solution02.cpp; sourceTree = "<group>"; };
 		EA0EB8BC22534224009FE75D /* Solution02.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Solution02.hpp; sourceTree = "<group>"; };
+		EA0EB8BE22537B48009FE75D /* Solution03.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Solution03.cpp; sourceTree = "<group>"; };
+		EA0EB8BF22537B48009FE75D /* Solution03.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Solution03.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				EA0EB8B92253414F009FE75D /* Solution01.hpp */,
 				EA0EB8BB22534224009FE75D /* Solution02.cpp */,
 				EA0EB8BC22534224009FE75D /* Solution02.hpp */,
+				EA0EB8BE22537B48009FE75D /* Solution03.cpp */,
+				EA0EB8BF22537B48009FE75D /* Solution03.hpp */,
 			);
 			path = AlgorithmAnalyze;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				EA0EB8B2225340DD009FE75D /* main.cpp in Sources */,
 				EA0EB8BD22534224009FE75D /* Solution02.cpp in Sources */,
 				EA0EB8BA2253414F009FE75D /* Solution01.cpp in Sources */,
+				EA0EB8C022537B48009FE75D /* Solution03.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
