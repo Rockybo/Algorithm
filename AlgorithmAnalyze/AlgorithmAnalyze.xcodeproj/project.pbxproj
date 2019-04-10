@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA084659225DFE7600F759B2 /* Solution04.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA084657225DFE7600F759B2 /* Solution04.cpp */; };
 		EA0EB8B2225340DD009FE75D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA0EB8B1225340DD009FE75D /* main.cpp */; };
 		EA0EB8BA2253414F009FE75D /* Solution01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA0EB8B82253414F009FE75D /* Solution01.cpp */; };
 		EA0EB8BD22534224009FE75D /* Solution02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA0EB8BB22534224009FE75D /* Solution02.cpp */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EA084657225DFE7600F759B2 /* Solution04.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Solution04.cpp; sourceTree = "<group>"; };
+		EA084658225DFE7600F759B2 /* Solution04.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Solution04.hpp; sourceTree = "<group>"; };
 		EA0EB8AE225340DD009FE75D /* AlgorithmAnalyze */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmAnalyze; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0EB8B1225340DD009FE75D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		EA0EB8B82253414F009FE75D /* Solution01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Solution01.cpp; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				EA0EB8BC22534224009FE75D /* Solution02.hpp */,
 				EA0EB8BE22537B48009FE75D /* Solution03.cpp */,
 				EA0EB8BF22537B48009FE75D /* Solution03.hpp */,
+				EA084657225DFE7600F759B2 /* Solution04.cpp */,
+				EA084658225DFE7600F759B2 /* Solution04.hpp */,
 			);
 			path = AlgorithmAnalyze;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA084659225DFE7600F759B2 /* Solution04.cpp in Sources */,
 				EA0EB8B2225340DD009FE75D /* main.cpp in Sources */,
 				EA0EB8BD22534224009FE75D /* Solution02.cpp in Sources */,
 				EA0EB8BA2253414F009FE75D /* Solution01.cpp in Sources */,
